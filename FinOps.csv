@@ -1,0 +1,10 @@
+Summary,High,Medium,Low,Total
+,3,2,1,6
+,,,,
+Sr No,Issue Name,Description,Risk,Remediation
+1,"User role can view, create and delete Organization Settings","Privilege escalation occurs when a user gets access to more resources or functionality than they are normally allowed, and such elevation or changes should have been prevented by the application.",High,Ensure that proper authorization mechanisms are implemented and no privileged actions could be performed by unprivileged users.
+2,CORS Misconfiguration,"Cross Origin Resource Sharing or CORS is a mechanism that enables a web browser to perform ""cross-domain"" requests using the XMLHttpRequest L2 API in a controlled manner.",Medium,Origin & Access-Control-Allow-Origin: The Origin header is always sent by the browser in a CORS request and indicates the origin of the request. 
+3,Components with Known Vulnerabilities,the application is using jQuery version 2.2.4 which are affected by known vulnerabilities.,Medium,"As a best practice, keep all software up to date, especially if there exists a known vulnerability or weakness associated with an older version."
+4,Weak Cipher Suites Supported,"Due to historic export restrictions of high grade cryptography, legacy and new web servers are often able and configured to handle weak cryptographic options.",Low,Disable insecure cipher suites
+5,XSS,"Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites.",High,Always input or output-encode all data coming into or out of the application.
+6,Unrestricted File Upload,"The consequences of unrestricted file upload can vary, including complete system takeover, an overloaded file system or database, forwarding attacks to back-end systems.",High,Restrict file types accepted for upload
