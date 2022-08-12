@@ -45,3 +45,5 @@ MPT also has security pentest analytics which helps us not only track and view e
 5. Click on 'Databases' create database with name 'MPT'
 6. Click on 'Import' and import the file attached here with code, named MPT.sql
 7. Copy the source code available here under C:\xampp\htdocs\ folder (path will vary for linux users) and you are done with setup. 
+
+http://localhost/MPT/login.php, default login credentials are admin/admin.
