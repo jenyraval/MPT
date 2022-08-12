@@ -47,3 +47,8 @@ MPT also has security pentest analytics which helps us not only track and view e
 7. Copy the source code available here under C:\xampp\htdocs\ folder (path will vary for linux users) and you are done with setup. 
 
 http://localhost/MPT/login.php, default login credentials are admin/admin.
+
+
+## Glimpse
+
+https://user-images.githubusercontent.com/5736792/184294484-7fdf471c-4e9f-41b1-9bd2-befea641cb27.mp4
