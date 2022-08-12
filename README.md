@@ -1,6 +1,6 @@
 # Managing Pentest (MPT: Pentest In Action) [![HITBSecConf HITB2022SIN](https://img.shields.io/badge/HITBSecConf-HITB2022SIN-blue?style=flat)](https://conference.hitb.org/hitbsecconf2022sin/session/mpt-pentest-in-action/)
 
-MPT aims to provide ine stop solution for managing all pentests that are running across organisation.
+MPT aims to provide one stop solution for managing all pentests that are running across organisation.
 
 ## Why?
 Security penetration testing is more than necessary. If not all, most organisations either have their own penetration testing team in-house or they have third party pentesters. In any fast paced organisation with multiple product lines and development planning timelines, it becomes challenging for security teams to efficiently manage all these pentest activities and effectively produce security assessment reports and track them.
@@ -35,3 +35,13 @@ MPT also has security pentest analytics which helps us not only track and view e
 - Asset health
 - Top pentester reported findings
 - Average busy time for each pentester
+
+## Installation Guidelines
+
+1. Download XAMPP from - https://www.apachefriends.org/download.html and follow installation flow on the screen. It will install webserver and MySQL for you.
+2. If you do not want to go with XAMPP, any webserver you may have and independent installation of MySQL should suffice.
+3. Once you have completed Step 1 or Step 2 depending on your choice, on XAMPP control panel start 'Apache' and 'MySQL' service.
+4. Open http://localhost/phpmyadmin/ or http://IP/phpmyadmin/ on the browser.
+5. Click on 'Databases' create database with name 'MPT'
+6. Click on 'Import' and import the file attached here with code, named MPT.sql
+7. Copy the source code available here under C:\xampp\htdocs\ folder (path will vary for linux users) and you are done with setup. 
