@@ -1,7 +1,7 @@
 <?php
    include('session.php');
    include('config.php');
-
+//prepared stmt
 $query = "select title,type,scope,totalpentest,score from asset";
 $prepared = $db->prepare($query);
 $prepared->execute();
