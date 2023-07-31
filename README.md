@@ -1,4 +1,5 @@
-# Managing Pentest (MPT: Pentest In Action) [![HITBSecConf HITB2022SIN](https://img.shields.io/badge/HITBSecConf-HITB2022SIN-blue?style=flat)](https://conference.hitb.org/hitbsecconf2022sin/session/mpt-pentest-in-action/)
+# Managing Pentest (MPT: Pentest In Action) [![HITBSecConf HITB2022SIN](https://img.shields.io/badge/HITBSecConf-HITB2022SIN-blue?style=flat)](https://conference.hitb.org/hitbsecconf2022sin/session/mpt-pentest-in-action/) ![OWASP NewZealand2023](https://img.shields.io/badge/OWASP-NewZealand2023-blue?style=flat&link=https%3A%2F%2Fappsec.org.nz%2Fconference%2Fspeakers.html%23raval-pentest-in-action)
+
 
 MPT aims to provide one stop solution for managing all pentests that are running across organisation.
 
