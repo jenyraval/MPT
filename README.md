@@ -6,7 +6,7 @@ MPT aims to provide one stop solution for managing all pentests that are running
 ## Why?
 Security penetration testing is more than necessary. If not all, most organisations either have their own penetration testing team in-house or they have third party pentesters. In any fast paced organisation with multiple product lines and development planning timelines, it becomes challenging for security teams to efficiently manage all these pentest activities and effectively produce security assessment reports and track them.
 
-In order to solve above challenges I have developed a solution called ‘Managing Pentest (MPT: Pentest in Action)’
+In order to solve above challenges I have developed a solution called ‘Managing Pentest (MPT: Pentest in Action!)’
 
 ## What?
 
