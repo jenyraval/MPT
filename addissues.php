@@ -97,7 +97,7 @@ echo "</select>";
 
 ?><br/><br/><br/>
 <input type="file" name="file" value="" /><br/><br/><br/>
-<input type="submit" name="submit" value="Submit">
+<input type="submit" name="submit" value="Upload">
 </form>
 <?php
 if(isset($_POST['submit']))
