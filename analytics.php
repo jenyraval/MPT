@@ -61,6 +61,8 @@ error_reporting(E_ALL);
    //developer trends
   // $query7 = "SELECT DISTINCT(Select Count(status) FROM issuedetails WHERE status ='Closed') AS closed, (SELECT Count(status) FROM issuedetails WHERE status != 'Closed') AS open FROM issuedetails;";
    $query7 = "SELECT high,medium FROM issue;";
+  //All issues
+  $query8 = "select sev,count(*) as total from issuedetails group by sev;"; 
    $result = mysqli_query($db,$query);
    $result1 = mysqli_query($db,$query1);
    $result2 = mysqli_query($db,$query2);
@@ -69,6 +71,7 @@ error_reporting(E_ALL);
    $result5 = mysqli_query($db,$query5);
    $result6 = mysqli_query($db,$query6);
    $result7 = mysqli_query($db,$query7);
+   $result8 = mysqli_query($db,$query8);
    ?>
 
      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -335,6 +338,46 @@ error_reporting(E_ALL);
       top: 1160px;
     left: 1000px;
     '></div>
+
+
+
+
+
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+   google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+         var data = google.visualization.arrayToDataTable([
+         ['Severity','Total'], 
+         <?php
+            while ($row = mysqli_fetch_assoc($result8))
+            { 
+              echo "['".$row['sev']."', ".$row['total']."],";
+            }
+          ?> 
+             ]); 
+
+          var options = {
+          title: 'Overall Issues:',
+           pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart8'));
+
+        chart.draw(data, options);
+      }
+  </script>
+       <div id="piechart8" style='width: 550px; height: 400px;
+    position: absolute;
+      top: 1560px;
+    left: 0px;
+    '></div>
+
+
+
 
 
 
